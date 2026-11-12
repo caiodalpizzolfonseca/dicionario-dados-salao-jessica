@@ -1,0 +1,94 @@
+:root {
+    --navy-color: #172B4D;
+    --primary-blue: #2563EB;
+    --bg-light: #F4F6FA;
+    --card-bg: #FFFFFF;
+    --text-color: #212529;
+    --border-color: #DEE2E6;
+}
+
+[data-bs-theme="dark"] {
+    --navy-color: #0F172A;
+    --primary-blue: #3B82F6;
+    --bg-light: #0B0F19;
+    --card-bg: #1E293B;
+    --text-color: #F8FAFC;
+    --border-color: #334155;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.bg-navy {
+    background-color: var(--navy-color) !important;
+}
+
+.bg-card-custom {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+.sidebar {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: var(--card-bg);
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.35rem 1rem;
+    font-size: 0.875rem;
+}
+
+.sidebar .nav-link:hover {
+    color: var(--primary-blue);
+}
+
+.fs-7 {
+    font-size: 0.85rem !important;
+}
+
+/* Badges de Privacidade LGPD */
+.badge-dps {
+    background-color: #DC3545;
+    color: #FFFFFF;
+}
+
+.badge-dp {
+    background-color: #FFC107;
+    color: #000000;
+}
+
+.badge-na {
+    background-color: #198754;
+    color: #FFFFFF;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.table {
+    color: var(--text-color);
+}
+
+[data-bs-theme="dark"] .table-striped > tbody > tr:nth-of-type(odd) > * {
+    color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+[data-bs-theme="dark"] .table-hover > tbody > tr:hover > * {
+    color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.05);
+}
